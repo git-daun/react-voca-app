@@ -10,7 +10,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<DayList />} />
-          <Route path="/word/:day" element={<WordList />} />
+          <Route path="/day/:day" element={<WordList />} />
         </Routes>
       </div>
     </BrowserRouter>
