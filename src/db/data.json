@@ -41,6 +41,27 @@
       "kor": "사과",
       "isDone": false,
       "id": 11
+    },
+    {
+      "day": "ㅁㄴㅇ",
+      "eng": "ㅁㄴㅇ",
+      "kor": "2",
+      "isDone": false,
+      "id": 12
+    },
+    {
+      "day": "daun",
+      "eng": "다운",
+      "kor": "2",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "eng": "daun",
+      "kor": "다운",
+      "day": "1",
+      "isDone": false,
+      "id": 14
     }
   ]
 }

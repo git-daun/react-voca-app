@@ -6,9 +6,9 @@ export default function Header() {
         <Link to="/">단어외우기</Link>
       </h1>
       <div className="menu">
-        <a href="#x" className="link">
+        <Link to="/create_word" className="link">
           단어추가
-        </a>
+        </Link>
         <a href="#x" className="link">
           Day추가
         </a>
