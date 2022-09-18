@@ -62,6 +62,13 @@
       "day": "2",
       "isDone": false,
       "id": 14
+    },
+    {
+      "eng": "book",
+      "kor": "책",
+      "day": "1",
+      "isDone": false,
+      "id": 15
     }
   ]
 }
