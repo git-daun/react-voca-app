@@ -6,6 +6,7 @@ export default function DayList() {
 
   return (
     <ul className="list_day">
+      {days.length === 0 && <span>Loading...</span>}
       {days.map((day) => {
         return (
           <li key={day.id}>

@@ -10,6 +10,7 @@ export default function WordList() {
   return (
     <>
       <h2>Day {day}</h2>
+      {data.length === 0 && <span>Loading...</span>}
       <table>
         <tbody>
           {data.map((word) => {
