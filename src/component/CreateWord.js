@@ -1,8 +1,10 @@
 import useFetch from "../hooks/useFetch";
 import { useRef } from "react";
+import { useNavigate } from "react-router";
 
 export default function CreateWord() {
   const days = useFetch("http://localhost:3001/days");
+  const navigate = useNavigate();
   //console.log(days);
   //form 태그에 있는 버튼의 새로고침을 막아줌
   const engRef = useRef(null);
@@ -12,9 +14,9 @@ export default function CreateWord() {
   function onSubmit(e) {
     e.preventDefault();
     //useRef사용해서 DOM요소에 접근하기(input값 가져오기)
-    console.log(engRef.current.value);
-    console.log(korRef.current.value);
-    console.log(dayRef.current.value);
+    // console.log(engRef.current.value);
+    // console.log(korRef.current.value);
+    // console.log(dayRef.current.value);
 
     fetch(`http://localhost:3001/words/`, {
       method: "POST",
@@ -30,6 +32,7 @@ export default function CreateWord() {
     }).then((res) => {
       if (res.ok) {
         alert("생성이완료되었습니다.");
+        navigate(`/day/${dayRef.current.value}`);
       }
     });
   }
